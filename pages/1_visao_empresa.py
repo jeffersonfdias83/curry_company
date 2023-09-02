@@ -152,9 +152,13 @@ def clean_code ( df1 ):
 
 #dataset_path = r"D:\Documentos\repos\2_fast_track_analisando_dados_com_python\ciclo_04\train(1).csv"
 
-df = pd.read_csv(train(1))
+file_path = train(1)
+print(file_path)
+df = pd.read_csv(file_path)
 
-print ( df.head() )
+#df = pd.read_csv(train(1))
+
+#print ( df.head() )
 
 # Fazendo uma cópia do DataFrame Lido
 df1 = df.copy()
