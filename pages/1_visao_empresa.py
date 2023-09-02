@@ -178,7 +178,7 @@ df1 = clean_code ( df )
 
 image_path = 'logo.jpeg'
 image = Image.open (image_path)
-st.sidebar.image( image, width=180)
+st.sidebar.image( image, width=120)
 
 st.header('Marketplace - Visão Cliente')
 
