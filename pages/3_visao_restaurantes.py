@@ -299,7 +299,7 @@ with tab1:
             avg_distance = df1.loc [:, ['City','Distance']].groupby ('City').mean().reset_index()
             fig = go.Figure ( data =[ go.Pie ( labels = avg_distance ['City'], values = avg_distance ['Distance'], pull =[0, 0.1, 0])])
             
-           fig.update_layout(width=400, height=300)
+            fig.update_layout(width=400, height=300)
             st.plotly_chart ( fig )  
             
             
