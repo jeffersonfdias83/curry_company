@@ -60,7 +60,7 @@ def avg_std_time_delivery ( df1, festival, op ):
     # Usar agg para aplicar duas funções (média e desvio padrão) ao mesmo tempo
     df1_aux.columns = ['avg_time', 'std_time']
     df1_aux = df1_aux.reset_index()
-    df1_aux = np.round (df1_aux.loc[ df1_aux['Festival'] == Yes, op ], 2 )
+    df1_aux = np.round (df1_aux.loc[ df1_aux['Festival'] == festival, op ], 2 )
 
     return df1_aux
 
