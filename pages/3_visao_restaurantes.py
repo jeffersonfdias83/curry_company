@@ -248,7 +248,7 @@ with tab1:
             fig.add_trace ( go.Bar( name='Control', x=df1_aux['City'], y=df1_aux ['avg_time'], error_y=dict(type='data', array=df1_aux['std_time'])))
             fig.update_layout(barmode = 'group')
             
-            #fig.update_layout(width=400, height=300)                      
+            fig.update_layout(width=400, height=300)                      
             st.plotly_chart( fig )  
                         
             
@@ -285,7 +285,7 @@ with tab1:
                                color_continuous_scale = 'RdBu', 
                                color_continuous_midpoint = np.average(df1_aux['std_time']))
             
-            #fig.update_layout(width=400, height=300)
+            fig.update_layout(width=400, height=300)
             st.plotly_chart (fig)
             
                                         
@@ -299,7 +299,7 @@ with tab1:
             avg_distance = df1.loc [:, ['City','Distance']].groupby ('City').mean().reset_index()
             fig = go.Figure ( data =[ go.Pie ( labels = avg_distance ['City'], values = avg_distance ['Distance'], pull =[0, 0.1, 0])])
             
-           #fig.update_layout(width=400, height=300)
+           fig.update_layout(width=400, height=300)
             st.plotly_chart ( fig )  
             
             
