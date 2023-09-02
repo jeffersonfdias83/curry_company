@@ -14,7 +14,7 @@ import folium
 from streamlit_folium import folium_static
 import numpy as np
 
-st.set_page_config ( page_title = 'Visão Restaurantes')#, layout = 'wide' )
+st.set_page_config ( page_title = 'Visão Restaurantes', layout = 'wide' )
 
 #=============== Funções ===============================
 
