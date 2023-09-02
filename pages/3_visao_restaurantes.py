@@ -32,7 +32,7 @@ def avg_std_time_on_traffic ( df1 ):
                        color_continuous_scale = 'RdBu', 
                        color_continuous_midpoint = np.average(df1_aux['std_time']))
 
-    #fig.update_layout (width=400, height=300)
+    fig.update_layout (width=400, height=300)
                 
     return fig
 
