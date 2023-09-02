@@ -218,17 +218,17 @@ with tab1:
             
             
         with col4:
-            df_aux = avg_std_time_delivery ( df1, 'Yes', 'std_time' )
+            df1_aux = avg_std_time_delivery ( df1, 'Yes', 'std_time' )
             col4.metric ( 'Desvio Padrão c/Festivais', df1_aux )           
             
             
         with col5:
-            df_aux = avg_std_time_delivery ( df1, 'No', 'avg_time' )
+            df1_aux = avg_std_time_delivery ( df1, 'No', 'avg_time' )
             col5.metric ( 'Tempo Médio s/Festivais', df1_aux )           
             
             
         with col6:
-            df_aux = avg_std_time_delivery ( df1, 'No', 'std_time' )
+            df1_aux = avg_std_time_delivery ( df1, 'No', 'std_time' )
             col6.metric ( 'Desvio Padrão s/Festivais', df1_aux)
                                  
             
